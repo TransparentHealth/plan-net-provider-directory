@@ -1,0 +1,104 @@
+{
+  "id": "plannet-practitionerrole-1235839784",
+  "meta": {
+    "lastUpdated": "2020-08-17T10:03:10Z",
+    "profile": [
+      "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-PractitionerRole"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
+      "valueReference": {
+        "reference": "Organization/plannet-network-HPID010000",
+        "display": "Acme of Massachusetts Preferred Provider Network"
+      }
+    }
+  ],
+  "identifier": [
+    {
+      "use": "secondary",
+      "type": {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+            "code": "PRN",
+            "display": "Provider Number"
+          }
+        ],
+        "text": "Hospital ID"
+      },
+      "system": "https://planned-parenthood-league-of-massachusetts-inc.com",
+      "value": "e3bee1d517d8c2"
+    }
+  ],
+  "active": true,
+  "practitioner": {
+    "reference": "Practitioner/plannet-practitioner-1235839784",
+    "display": "Judi Jenkins"
+  },
+  "organization": {
+    "reference": "Organization/plannet-organization-1231095779",
+    "display": "PLANNED PARENTHOOD LEAGUE OF MASSACHUSETTS, INC."
+  },
+  "code": [
+    {
+      "coding": [
+        {
+          "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/ProviderRoleCS",
+          "code": "ph",
+          "display": "Physician"
+        }
+      ]
+    }
+  ],
+  "specialty": [
+    {
+      "coding": [
+        {
+          "system": "http://nucc.org/provider-taxonomy",
+          "code": "207QS0010X",
+          "display": "Sports Medicine"
+        }
+      ],
+      "text": "Sports Medicine"
+    }
+  ],
+  "location": [
+    {
+      "reference": "Location/plannet-location-1231095779",
+      "display": "PLANNED PARENTHOOD LEAGUE OF MASSACHUSETTS, INC."
+    }
+  ],
+  "healthcareService": [
+    {
+      "reference": "HealthcareService/group-healthcareservice-1231095779",
+      "display": "PLANNED PARENTHOOD LEAGUE OF MASSACHUSETTS, INC."
+    }
+  ],
+  "telecom": [
+    {
+      "system": "phone",
+      "value": "1-491-892-3958",
+      "use": "work"
+    },
+    {
+      "system": "fax",
+      "value": "146.302.0059 x376",
+      "use": "work"
+    }
+  ],
+  "availableTime": [
+    {
+      "daysOfWeek": [
+        "mon",
+        "tue",
+        "wed",
+        "thu"
+      ],
+      "availableStartTime": "09:00:00",
+      "availableEndTime": "12:00:00"
+    }
+  ],
+  "resourceType": "PractitionerRole"
+}
